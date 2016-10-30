@@ -15,7 +15,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  */
 public class Company {
     private int bal, id;
-    ReadWriteLock RWlock = new ReentrantReadWriteLock();  
+    private final ReadWriteLock RWlock = new ReentrantReadWriteLock();  
     
    public Company(int balance, int id){
        this.bal=balance;
